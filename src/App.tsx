@@ -1,5 +1,6 @@
 import Notes from './components/Notes'
 import Presence from './components/Presence'
+import Whiteboard from './components/Whiteboard'
 import { roomId } from './lib/room'
 
 export default function App() {
@@ -9,6 +10,8 @@ export default function App() {
       <p>Room: {roomId} (share this URL)</p>
       <Presence/>
       <Notes />
+      <h3>Whiteboard</h3>
+      <Whiteboard />
     </div>
   )
 }
