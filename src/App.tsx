@@ -1,4 +1,5 @@
 import Notes from './components/Notes'
+import Presence from './components/Presence'
 import { roomId } from './lib/room'
 
 export default function App() {
@@ -6,6 +7,7 @@ export default function App() {
     <div style={{ maxWidth: 900, margin: '0 auto', padding: 16 }}>
       <h2>CollabBoard</h2>
       <p>Room: {roomId} (share this URL)</p>
+      <Presence/>
       <Notes />
     </div>
   )
